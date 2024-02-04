@@ -21,11 +21,6 @@ enum shape_e
     SHAPE_CURVE          = 6
 };
 
-// Forward declarations
-struct shape_s;
-
-// Type definitions
-typedef struct shape_s camera;
 
 // Structure definitions
 struct shape_s

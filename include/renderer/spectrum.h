@@ -9,6 +9,13 @@
 // Include guard
 #pragma once
 
+// Header files
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include <renderer/rtypedef.h>
+
 // Enumeration definitions
 enum spectrum_e 
 {
@@ -22,14 +29,9 @@ enum spectrum_e
     SPECTRUM_BLACKBODY        = 7
 };
 
-// Forward declarations
-struct spectrum_s;
-
 // Type definitions
-typedef struct spectrum_s spectrum;
-
-typedef float (*fn_spectrum_lambda)(const spectrum *const p_spectrum, float *p_lambda );
-typedef float (*fn_spectrum_max_value)(const spectrum *const p_spectrum, float *p_lambda );
+typedef int (*fn_spectrum_lambda)(const spectrum *const p_spectrum, float *p_lambda );
+typedef int (*fn_spectrum_max_value)(const spectrum *const p_spectrum, float *p_lambda );
 
 // Structure definitions
 struct spectrum_s

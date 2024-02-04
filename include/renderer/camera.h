@@ -19,12 +19,6 @@ enum camera_e
     CAMERA_REALISTIC    = 4
 };
 
-// Forward declarations
-struct camera_s;
-
-// Type definitions
-typedef struct camera_s camera;
-
 // Structure definitions
 struct camera_s
 {

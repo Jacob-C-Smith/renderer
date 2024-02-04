@@ -21,12 +21,6 @@ enum primitive_e
     PRIMITIVE_KD_TREE_AGGREGATE = 6
 };
 
-// Forward declarations
-struct primitive_s;
-
-// Type definitions
-typedef struct primitive_s primitive;
-
 // Structure definitions
 struct primitive_s
 {
